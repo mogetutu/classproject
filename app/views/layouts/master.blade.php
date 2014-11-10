@@ -4,11 +4,8 @@
 	@include('includes.head')
 </head>
 <body>
+@include('includes.header')
 <div class="container">
-
-	<header class="row">
-		@include('includes.header')
-	</header>
 
 	<div id="main" class="row">
 
@@ -19,9 +16,10 @@
 		@include('includes.sidebar')
 	</div>
 
-	<footer class="row">
+	 <!-- <footer class="footer">
 		@include('includes.footer')
-	</footer>
+	</footer> -->
+	@include('layouts.alert')
 
 </div>
 </body>
