@@ -4,23 +4,20 @@
 	@include('includes.head')
 </head>
 <body>
-@include('includes.header')
-<div class="container">
+	@include('includes.header')
+	<div class="container">
+	   @include('layouts.alert')
 
-	<div id="main" class="row">
-
-			@yield('content')
+		<div id="main" class="row">
+				@yield('content')
+		</div>
 
 	</div>
-	<div class="sidebar">
-		@include('includes.sidebar')
-	</div>
+    <!-- <div class="row">
+		 <footer class="footer">
+			@include('includes.footer')
+		</footer>
+	</div> -->
 
-	 <!-- <footer class="footer">
-		@include('includes.footer')
-	</footer> -->
-	@include('layouts.alert')
-
-</div>
 </body>
 </html>

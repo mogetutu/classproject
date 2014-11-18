@@ -12,18 +12,27 @@ class AuthController extends BaseController
   public function login()
   {
     $credentials = [
-      'username' => Input::get('username'),
+      // 'username' => Input::get('username'),
       'email'    => Input::get('email'),
       'password' => Input::get('password')
     ];
 
     if(Auth::attempt($credentials))
     {
-      return Redirect::route('pages.advertisments');
-    }
+      Mail::send('emails.welcome', $credentials, function($message)
+        {
+            $message->to('janepeters94@gmail.com', 'Loise')
+            ->subject('Welcome to suppershopers app!');
+        });
 
+      return Redirect::route('advertisments');
+    }
+    else
+    {
     return Redirect::back()->with('message', 'Check Username and Password');
+    }
   }
+
 
   /**
    * Sign Up
@@ -48,12 +57,20 @@ class AuthController extends BaseController
       $user->password = Hash::make($data['password']);
       $user->save();
 
+
       // Login User
       Auth::login($user);
 
-      return Redirect::route('pages.advertisments');
+        Mail::send('emails.welcome', $data, function($message)
+        {
+            $message->to('loisenjoki6@gmail.com', 'Loise')
+            ->subject('Welcome to suppershopers app!');
+        });
+
+      return Redirect::route('advertisments');
     }
   }
+
 
   /**
    * Login Page
@@ -81,11 +98,19 @@ class AuthController extends BaseController
   {
     Auth::logout();
 
-    return Redirect::route('login');
+    return Redirect::route('signin');
   }
 
   public function advertismentspage()
   {
     return View::make('pages.advertisments');
+  }
+
+  public function account(){
+    // $id = User::findorFail($id);
+    $id = Auth::user()->id;
+    $users = DB::table('users')->where('id', $id)->get();
+    // return View::make('account', compact('users'));
+    return Redirect::route('advertisments', compact('users'));
   }
 }
