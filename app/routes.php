@@ -32,7 +32,7 @@ Route::get('account', 'AuthController@account');
 //definig the registration process
 Route::get('signup', ['as' => 'signup', 'uses'=> 'AuthController@signupPage']);
 // Create Account Route
-Route::post('advertisments', ['as' => 'advertisments', 'uses' => 'AuthController@signup']);
+Route::post('signup', ['as' => 'advertisments', 'uses' => 'AuthController@signup']);
 // Sign In Route
 Route::get('signin', ['as' => 'signin', 'uses'=> 'AuthController@loginPage']);
 // Login Route
