@@ -19,17 +19,12 @@ class AuthController extends BaseController
 
     if(Auth::attempt($credentials))
     {
-      Mail::send('emails.welcome', $credentials, function($message)
-        {
-            $message->to('janepeters94@gmail.com', 'Loise')
-            ->subject('Welcome to suppershopers app!');
-        });
 
       return Redirect::route('advertisments');
     }
     else
     {
-    return Redirect::back()->with('message', 'Check Username and Password');
+      return Redirect::back()->with('message', 'Check Username and Password');
     }
   }
 
@@ -40,11 +35,10 @@ class AuthController extends BaseController
    */
   public function signup()
   {
-    $data = User::all();
     $data = [
        'username' => Input::get('username'),
        'email'    => Input::get('email'),
-      'password' => Input::get('password')
+       'password' => Input::get('password')
       ];
     $validation = Validator::make($data, User::$rules);
 
@@ -53,7 +47,7 @@ class AuthController extends BaseController
       // Create User account
       $user = new User;
       $user->username = $data['username'];
-      $user->email    =$data['email'];
+      $user->email    = $data['email'];
       $user->password = Hash::make($data['password']);
       $user->save();
 
@@ -61,14 +55,16 @@ class AuthController extends BaseController
       // Login User
       Auth::login($user);
 
-        Mail::send('emails.welcome', $data, function($message)
-        {
-            $message->to('loisenjoki6@gmail.com', 'Loise')
-            ->subject('Welcome to suppershopers app!');
-        });
+      Mail::send('emails.welcome', $data, function($message) use($data)
+      {
+          $message->to($data['email'], $data['username'])
+          ->subject('Welcome to suppershopers app!');
+      });
 
       return Redirect::route('advertisments');
     }
+
+    return Redirect::back()->withInput()->withErrors($validation);
   }
 
 
