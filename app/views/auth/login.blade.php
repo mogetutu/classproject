@@ -3,7 +3,7 @@
  <div id="login">
   <div class="page-header">
     <div class="pull-right">
-      <a href="/signup" class="btn btn-primary">Sign Up</a>
+      <a href="/signup" class="btn btn-default">Sign Up</a>
     </div>
     <h2>Login</h2>
   </div>
@@ -18,7 +18,7 @@
     {{Form::password('password', ['class' => 'form-control', 'placeholder' => 'Password'])}}
   </div>
   <div class="form-group">
-    {{Form::submit('Login', ['class' => 'btn btn-primary'])}}
+    {{Form::submit('Login', ['class' => 'btn btn-default'])}}
   </div>
   {{Form::close()}}
   </div>

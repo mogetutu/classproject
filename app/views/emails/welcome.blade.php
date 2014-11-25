@@ -1,1 +1,1 @@
-<h2>Welcome to SupperShoppers {{$email}}</h2>
+<h2>Welcome to SupperShoppers {{$username}}</h2>

@@ -34,7 +34,7 @@
 		font-size: 50px; 
 		text-align: center;
 		margin: 80px 400px 80px 400px;
-		color: green;
+		color: #336699;
     }
 
 	p{color:white;
@@ -71,7 +71,7 @@
 		font-size: 50px; 
 		text-align: center;
 		margin: 80px 400px 80px 400px;
-		color: green;
+		color: #336699;
 	}
 	.problems p.prob{
 		color: black;
@@ -95,11 +95,11 @@
 		border-color: #e7e7e7;
 		position: fixed;
 		top:0;
-		height: 60px;
-		background-color: #FF66FF;
+		height: 100px;
+		background-color: #336699;
 		width: 100%;
 		color: white;
-		margin: 10px;
+		margin: 0px;
 	}
 	.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:focus {
 		color: #fff;
@@ -184,7 +184,7 @@ h1 { color: white }
 	-moz-transform: scale(1.25);
 	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.5);
 	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.5);
-	z-index: -5;
+	z-index: -100;
 	/*position: relative;*/
 
 }
@@ -206,8 +206,8 @@ h1 { color: white }
 	height: 100%;
 }
 .about h2{
-		border-top: 1px solid green;
-		border-bottom: 5px solid green;
+		border-top: 1px solid #336699;
+		border-bottom: 5px solid #336699;
 		font-size: 50px; 
 		text-align: center;
 		padding: 20px;
@@ -222,26 +222,57 @@ h1 { color: white }
 	text-align: center;
 	margin: 20px 100px 100px 100px;
 	}
+
+#pick1 {
+	margin-left: 50px;
+	z-index: -10;
+}	
 #pick1 h1{
 		border-top: 1px solid #ccc;
 		border-bottom: 1px solid #ccc;
 		font-size: 50px; 
 		text-align: center;
 		margin: 80px 400px 80px 400px;
-		color: green;
+		color: #336699;
 	}
 footer {
-background-color: red;
-margin-top: 100px;
-padding: 10px;
+	background-color: #000;
+	text-align: center;
+	margin-top: 100px;
+	padding: 10px;
+	bottom: 0;
 }
 #login{
-	/*background-color: #224B76;*/
+	background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+
 	width: 50%;
-	margin: 0 auto;
+	margin: 100px auto 0;
+	border: 7px solid #244B76;
+
 }
 #login h2 {
 	color: #000;
+	text-shadow: 2px 2px 2px #2E2E2E;
+}
+.btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
+color: #fff;
+background-color: #000;
+border-color: #adadad;
+}
+.form-group{
+	padding: 10px;
+	-webkit-border-radius: undefined 3px 3px 3px;
+	border-radius: undefined 3px 3px 3px;
+	-webkit-box-shadow:inset 0 0 3px 2px rgba(255,255,255,0.5);
+box-shadow:inset 0 0 3px 2px rgba(255,255,255,0.5);
 }
 .flip3D{ 
 	width:280px; 
@@ -257,43 +288,33 @@ padding: 10px;
 	backface-visibility: hidden;
 	transition: transform .5s linear 0s;
 }
-.flip3D > .back{
-	position:absolute;
-	transform: perspective( 600px ) rotateY( 180deg );
-	background: #80BFFF; width:240px; height:200px; border-radius: 7px;
-	backface-visibility: hidden;
-	transition: transform .5s linear 0s;
-}
-.flip3D:hover > .front{
-	transform: perspective( 600px ) rotateY( -180deg );
+
+/*.flip3D:hover > .front{
+	transform: perspective( 600px ) rotateY( -180deg );*/
 }
 .flip3D:hover > .back{
 	transform: perspective( 600px ) rotateY( 0deg );
 }
-/*.flip3D img {
-	height: 280px;
-	width: 200px;
-}*/
 #offer {
-	margin: 0 auto;
+	margin: 0 auto;	
 	padding: 10px;
 	z-index: -10;
 }
 #wrapper1{
-	 background-color:#244B76;;
+	 background-color:#FFFFCC;
 	 width: 900px;
 	 min-height:500px;
 	 margin:0 auto;
 	 border:2px;
 	 margin-top:50px;
-     box-shadow: 3px 3px 3px #244B76;
+     box-shadow: 3px 3px 3px #dddddd;
 
 
 }
 
 
-h1 {
-    font-size: 30px;
+#wrapper .content h2 {
+    font-size: 20px;
     line-height: 30px;
     padding-bottom: 20px;
     font-family: "Orbitron",sans-serif;
@@ -323,10 +344,11 @@ form.contactForm textarea{
     border-image: none;
     font-family: "Source Sans Pro",sans-serif;
     border-radius: 5px;
+    border: 2px solid #ddd;
 }
  .field {
      border-radius:5px #244B76;
-      box-shadow: 3px 3px 3px #244B76;
+      
 
 
 }
@@ -341,7 +363,7 @@ label{
 display: block;
 width: 100%;
 font-family: "source Sans Pro",sans-serif;
-color:#fff;
+color:#000;
 
 }
 .side{       
@@ -349,7 +371,7 @@ color:#fff;
       margin-top:40px;
       margin-right:80px;
       font-family: "Source Sans Pro",sans-serif;
-      color: #fff;
+      color: #000;
 }
 
 form.contactForm .sendBtn {
@@ -360,7 +382,7 @@ form.contactForm .sendBtn {
     font-size: 14px;
     font-family: "Source Sans Pro",sans-serif;
     font-weight:400;
-    color: #fff;
+    color: #000;
     height: 30px;
     width: 80px;
 }
@@ -374,4 +396,7 @@ form.contactForm .sendBtn:hover {
     color:#F22F79;
     height: 30px;
     width: 80px;
+}
+p.last{
+	color:#000;
 }

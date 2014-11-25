@@ -4,8 +4,8 @@
 
 	<div class="flip3D">
 	  <div class="back">Offer!!!<br>
-	  Buy a bread at an affordable price and make <br>
-	  live a strong morning!!!
+	  <!-- Buy a bread at an affordable price and make <br>
+	  live a strong morning!!! -->
 	  </div>
 	  <div class="front">
 	  	<img src="assets/images/bread.jpg" width="250px" height="200px">

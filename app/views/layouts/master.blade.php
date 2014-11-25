@@ -13,11 +13,11 @@
 		</div>
 
 	</div>
-    <!-- <div class="row">
+    <div class="row">
 		 <footer class="footer">
 			@include('includes.footer')
 		</footer>
-	</div> -->
+	</div> 
 
 </body>
 </html>
