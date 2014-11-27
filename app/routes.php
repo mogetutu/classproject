@@ -63,5 +63,4 @@ Route::get('advertisments', ['as' => 'advertisments', 'uses'=> 'PageController@a
  Route::resource ('contact','MessageController');
 
  Route::get('contact', 'MessageController@create');
- Route::post('contact', 'MessageController@create');
  Route::get('contact', 'MessageController@store');
