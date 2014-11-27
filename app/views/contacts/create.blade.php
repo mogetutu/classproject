@@ -5,7 +5,7 @@
   </div>
 {{Form::open(['route' => 'contact.store'])}}
   <div class="form-group">
-    {{Form::text('name',  ['class' => 'form-control', 'placeholder' => 'name'])}}
+    {{Form::text('name',  null,['class' => 'form-control', 'placeholder' => 'name'])}}
   </div>
   <div class="form-group">
     {{Form::text('occupation', null, ['class' => 'form-control', 'placeholder' => 'occupation'])}}
