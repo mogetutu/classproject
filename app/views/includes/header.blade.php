@@ -23,8 +23,8 @@
 		<li><a href="/contact">Contact</a></li>
 		<li><a href="http://localhost:8000/signin">Advertisments</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
+      <!-- <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"></a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
@@ -33,7 +33,7 @@
             <li><a href="#">Something else here</a></li>
             <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
-          </ul>
+          </ul> -->
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->

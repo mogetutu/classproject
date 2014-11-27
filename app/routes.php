@@ -20,10 +20,10 @@ Route::get('/about', function()
 	return View::make('pages.about');
 });
 
-Route::get('/contact', function()
-{
-	return View::make('pages.contact');
-});
+// Route::get('/contact', function()
+// {
+// 	return View::make('pages.contact');
+// });
 Route::get('adverts', function(){
 	return "Advert";
 });
@@ -47,3 +47,21 @@ Route::get('advertisments', ['as' => 'advertisments', 'uses'=> 'PageController@a
 
 //mailing routes defined here
 // Route::get('/', 'MailController@sendEmail');sendEmail
+// Route::get('/contact', function()
+// {
+// 	return View::make('contacts.create');
+// 	$contact = new Contact;
+// 	$contact->name = Input::get('name');
+// 	$contact->occupation = Input::get('occupation');
+// 	$contact->telephone = Input::get('telephone');
+// 	$contact->message = Input::get('message');
+// 	$contact->password = Hash::make(Input::get('password'));
+// 	$contact->save();
+
+// 	return Redirect::route('contact.create')->with('message','Your message have been received thatnkyou');
+// });
+ Route::resource ('contact','MessageController');
+
+ Route::get('contact', 'MessageController@create');
+ Route::post('contact', 'MessageController@create');
+ Route::get('contact', 'MessageController@store');
