@@ -19,7 +19,7 @@
 	<li><img src="assets/images/Janepaul.jpg" width="200px" height="250px"><b>JANE GICHUHI</b><br><span>
 	 Developer</span></li>
 	<li><img src="assets/images/Loise.jpg" width="200px" height="250px"><b>LOISE NJOKI</b><br><span>Programmer</span></li>
-	<li><img src="assets/images/ekra.jpg" width="200px" height="150px"><b>EKRA NYAMBURA</b><br><span>programmer</span></li>
+	<li><img src="assets/images/ekra.jpg" width="200px" height="250px"><b>EKRA NYAMBURA</b><br><span>programmer</span></li>
 	<li><img src="assets/images/goreti.jpg" width="200px" height="250px"><b>GORETI AKOTH</b><br><span>Designer</span></li>
 	<li><img src="assets/images/flo.jpg" width="200px" height="250px"><b>FLORENCE WANJUGU</b><br><span>Designer</span></li>
 	<li><img src="assets/images/janet.jpg" width="200px" height="250px"><b>JANER ALFRED</b><br><span>Developer</span></li>

@@ -11,15 +11,16 @@
 	 </div>
 
 <p class="p2">
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	The culture of window­shopping in Kenya is dying as more people acquire internet-
+  enabled phones and businesses increase online presence.
+  Window­shopping is described as the act of looking at goods in shop windows,
+  normally without the intention of buying them. Many Kenyans, especially women,
+  loved the habit with some turning it into a pastime.
+  But as mobile phones, particularly smart phones, gain popularity, people are
+  increasingly turning to the gadgets for “window­shopping”. Mobile phones have
+  now become the perfect place to window­shop for any goods or services, thus
+  cutting hours people used to take to walk while walking the streets of the capital
+  comparing prices. Duis aute irure dolor in reprehenderit in voluptate velit esse
 	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
@@ -30,12 +31,12 @@
    <div class="pro">
 	  <h2>problems</h2>
 	</div>
-	<p class="prob"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
+	<p class="prob"> At the click of a button, one can get information about the cost of various items at
+  different supermarkets, that is Naivas, Turskeys, uchumi and Nakumatt.
+  Why waste time walking around town when everything is now at your fingertip?
+  You just have to download the super Shoppers application that will enable you
+  enjoy budgeting from your comfort zone depending with how often you visit the
+  supermarkets for shopping..Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
  <div class="jane">
  	<img src="assets/images/mamashop.jpg">
 	 <img src="assets/images/shopping.jpg"> 
@@ -56,12 +57,12 @@
 	 </div>
 
 <p class="p2">
-	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	Super Shoppers is an application that is developed for urban shoppers who
+  regularly shop at the most known supermarkets in Kenya .It has been developed to
+  solve the problem that urban shoppers have been experiencing such as : window-
+  shopping, listing items needed to be bought on paper and forgetfulness of items
+  when one is already at the supermarkets .It also helps you in calculating the total
+  amount of items bought and also gives you the history of the previous shopping. sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -91,12 +92,7 @@
       </div>
     </div>
     <div class="item">
-      <img src="assets/images/s4.png" >
-      <div class="carousel-caption">
-      </div>
-    </div>
-    <div class="item">
-      <img src="assets/images/s2.png" >
+      <img src="assets/images/s6.png" >
       <div class="carousel-caption">
       </div>
     </div>
@@ -106,7 +102,12 @@
       </div>
     </div>
     <div class="item">
-      <img src="assets/images/s1.png" >
+      <img src="assets/images/s5.png" >
+      <div class="carousel-caption">
+      </div>
+    </div>
+    <div class="item">
+      <img src="assets/images/s4.png" >
       <div class="carousel-caption">
       </div>
     </div>

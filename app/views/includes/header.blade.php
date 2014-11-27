@@ -15,7 +15,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
     <a class="navbar-brand" rel="home" href="#" >
-        <img style="max-width:100px; margin-top: -13px;"
+        <img style="max-width:100px; margin-top:-25px;"
              src="/assets/images/logo.jpg">
     </a>
 		<li><a href="/">Home</a></li>
